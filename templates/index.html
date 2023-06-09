@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Products Recommended System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Products Recommended System</h1>
+  <form id="customer-form">
+    <label for="customer-id">Customer ID:</label>
+    <input type="text" id="customer-id" required>
+    <button type="submit">Get Recommendations</button>
+  </form>
+  <div id="result"></div>
+  <script src="{{ url_for('static', filename='pd.js') }}"></script>
+</body>
+</html>
